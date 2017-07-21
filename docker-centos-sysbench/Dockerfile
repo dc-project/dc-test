@@ -10,7 +10,7 @@ RUN yum makecache;yum install -y wget curl net-tools; \
 
 RUN echo "echo $data'" > /root/hello;chmod +x /root/hello;
 
-CMD ['/root/hello']
+CMD ['bash','/root/hello']
 
 
 
