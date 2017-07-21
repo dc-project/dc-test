@@ -8,9 +8,8 @@ RUN yum makecache;yum install -y wget curl net-tools; \
     yum makecache;yum install -y sysbench; \
     yum clean all;
 
-RUN echo "echo $data'" > /root/hello;chmod +x /root/hello;
 
-CMD ['bash','/root/hello']
+CMD ["sshd"]
 
 
 
