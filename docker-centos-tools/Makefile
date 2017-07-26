@@ -1,7 +1,7 @@
 all: build
 
 build:
-	@docker build --tag=nvwa/sysbench:latest .
+	@docker build --tag=nvwa/ctools:latest .
 
 release: build
-	@docker build --tag=nvwa/sysbench:$(shell cat VERSION) .
+	@docker build --tag=nvwa/ctools:$(shell cat VERSION) .

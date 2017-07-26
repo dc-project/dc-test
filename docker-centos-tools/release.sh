@@ -2,7 +2,7 @@
 
 set -xe
 
-image_name='nvwa/sysbench'
+image_name='nvwa/ctools'
 version=$1
 
 if [[ $version == "" ]];then
